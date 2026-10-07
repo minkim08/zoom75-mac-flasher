@@ -1,0 +1,13 @@
+# Firmware is Meletrix's; download it from them, don't commit it
+*.hex
+*.bin
+*.7z
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
