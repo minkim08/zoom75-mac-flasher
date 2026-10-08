@@ -16,6 +16,9 @@ Usage:
   python3 zoom75_flash.py firmware.hex --dry-run  # check everything, write nothing
   python3 zoom75_flash.py firmware.hex --skip-hid # board already in DFU mode
   python3 zoom75_flash.py --list                  # show detected devices
+
+DISCLAIMER: Unofficial tool, not affiliated with Meletrix. Use at your own risk.
+The author is not responsible for any damage to your keyboard or other hardware.
 """
 import argparse
 import os

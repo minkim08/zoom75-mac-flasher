@@ -4,6 +4,9 @@ Flash firmware onto a **Meletrix Zoom75 Wireless** (tri-mode) keyboard from macO
 
 Meletrix's official updater, `WuqueDFUupgradeProgrammer.exe`, only runs on Windows, and it usually fails inside Parallels or UTM because the keyboard re-enumerates as a new USB device partway through the flash. This script reimplements the same process natively using `hidapi` and `dfu-util`.
 
+> [!WARNING]
+> Use at your own risk. The author is not responsible for any damage to your keyboard or other hardware. See [Disclaimer](#disclaimer).
+
 ## Requirements
 
 - macOS (should also work on Linux)
@@ -114,7 +117,9 @@ The script converts the Intel HEX to a flat binary itself and refuses to flash a
 
 ## Disclaimer
 
-Not affiliated with or endorsed by Meletrix or Wuque Studio. This repo contains no Meletrix code or firmware; download firmware from Meletrix directly. Flashing firmware is at your own risk.
+Not affiliated with or endorsed by Meletrix or Wuque Studio. This repo contains no Meletrix code or firmware; download firmware from Meletrix directly.
+
+**Flashing firmware is entirely at your own risk.** This is an unofficial tool built by reverse-engineering the Windows updater. The author is not responsible for any damage to your keyboard or any other hardware, including bricked devices, data loss, or voided warranties, resulting from the use of this software. The software is provided "as is", without warranty of any kind, as stated in the [MIT License](LICENSE).
 
 ## License
 
